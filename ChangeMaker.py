@@ -30,11 +30,11 @@ def print_change(coinery):
         print(each)
     print("\n")
 
-Denoms1 = [1, 5, 10, 25]  # <-- US denominations
-Denoms2 = [1, 4, 5]        # <-- 'Weird' denominations
-values = [8, 11, 17, 41, 105]
-
-for each in values:
-   change = make_change(Denoms1, each)
-   print("Total Value: "+str(each))
-   print_change(change)
+if __name__ == "__main__":
+    total_due=[10,15,21,34]
+    coin_types=[1,3,5,7,10]
+    
+    for each in total_due:
+       change = make_change(coin_types, each)
+       print("Total Value: "+str(each))
+       print_change(change)
