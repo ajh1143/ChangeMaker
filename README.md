@@ -57,6 +57,11 @@ def print_change(coinery):
         print(each)
     print("\n")
 ```
+## Example Output:    
+Parameters: 
+    `total_due = [10, 15, 21, 34]`
+    `coin_types = [1, 3, 5, 7, 10]`
+    
 <img src="https://github.com/ajh1143/ChangeMaker/blob/master/Images/coins.png" class="inline"/><br>
 
 ## Example Main
