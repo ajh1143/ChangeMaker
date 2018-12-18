@@ -2,6 +2,11 @@ from collections import Counter
 import matplotlib.pyplot as plt
 
 def make_change(denoms, value):
+    """
+    :param denoms: list of denomination types
+    :param value: total change due 
+    :return: Counter dict of denominations to achieve total value
+    """
     denoms = denoms.copy()
     denom_list = []
     while value >= 0 and len(denoms) > 0:
@@ -17,6 +22,10 @@ def make_change(denoms, value):
     return coins
 
 def plot_change(coinery):
+    """
+    :param coinery: Counter dict of denominations and counts
+    Generate Plot of denominations by count w/ title and axis labels
+    """
     labels, values = coinery.items()
     plt.bar(labels, values)
     plt.title("Change Due To Customer")
@@ -25,6 +34,10 @@ def plot_change(coinery):
     plt.show()
 
 def print_change(coinery):
+    """
+    :param coinery: Counter dict of denominations and counts
+    Prints k,v pairs of denomination type, counts, and total value
+    """
     x=[{"Coin Value": k, "Amount": v} for k, v in coinery.items()]
     for each in x:
         print(each)
