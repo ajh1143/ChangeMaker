@@ -57,7 +57,7 @@ def print_change(coinery):
         print(each)
     print("\n")
 ```
-<img src="https://github.com/ajh1143/ChangeMaker/blob/master/images/coins.png" class="inline"/><br>
+<img src="https://github.com/ajh1143/ChangeMaker/blob/master/Images/coins.png" class="inline"/><br>
 
 ## Example Main
 ```Python3
